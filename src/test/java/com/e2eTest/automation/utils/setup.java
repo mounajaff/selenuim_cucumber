@@ -3,7 +3,6 @@ package com.e2eTest.automation.utils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Platform;
-import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -73,5 +72,9 @@ public class setup {
 	/* GETTER */
 	public static WebDriver getDriver() {
 		return driver;
+	}
+	
+	public static Logger getLogger() {
+		return LOGGER ;
 	}
 }
